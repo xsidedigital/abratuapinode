@@ -28,10 +28,12 @@ module.exports = {
         // }
 
         const affiliate = await Affiliate.findOne({ where: { userId: req.body.userId } })
+        console.log('affiliate', affiliate)
 
         if (affiliate) {
             return res.status(400).json({ error: 'Affiliate already exists.' })
         }else {
+            console.log('passou aqui')
             await Affiliate.create(req.body)
 
             return res.json(req.body)
