@@ -11,7 +11,7 @@ const Affiliatechema = new Schema({
     rg: { type: String, required: true }, 
     email: { type: String, required: true }, 
     cep: { type: String, required: true }, 
-    yearEntered: { type: Number, required: true }, 
+    yearEntered: { type: String, required: true }, 
     birthdate: { type: Date, required: true }, 
     registerDate: { type: Date, required: true }, 
     address: { type: String, required: true }, 
@@ -35,15 +35,15 @@ const Affiliatechema = new Schema({
     contactNumber: { type: String }, 
     whichNationId: { type: String }, 
 
-    maritalStatusId: { type: Number}, 
-    religiosityId: { type: Number}, 
-    regularized: { type: Number}, 
+    maritalStatusId: { type: String}, 
+    religiosityId: { type: String}, 
+    regularized: { type: String}, 
     maritalStatus: { type: String, required: true },
     
-    affiliateTypeId: { type: Number}, 
+    affiliateTypeId: { type: String}, 
     affiliateType: { type: String },
     
-    priestlyHierarchyId: { type: Number, required: true }, 
+    priestlyHierarchyId: { type: String, required: true }, 
     priestlyHierarchy: { type: String},
 
     userId: { type: String, required: true },
