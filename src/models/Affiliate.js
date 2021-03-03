@@ -1,10 +1,6 @@
 const {Schema, model } = require('mongoose')
 
 const Affiliatechema = new Schema({
-
-
-
-    
     affiliateName: { type: String},
     cpf: { type: String }, 
     cnpj: { type: String }, 
@@ -12,8 +8,8 @@ const Affiliatechema = new Schema({
     email: { type: String }, 
     cep: { type: String }, 
     yearEntered: { type: String }, 
-    birthdate: { type: Date }, 
-    registerDate: { type: Date }, 
+    birthdate: { type: String }, 
+    registerDate: { type: String }, 
     address: { type: String }, 
     addressComplement: { type: String }, 
     addressHouseBorn: { type: String }, 
